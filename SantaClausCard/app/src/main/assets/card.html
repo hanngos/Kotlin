@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta name="viewport"
+      content="
+      height = device-height,
+      width = device-width,
+      user-scalable = no"/>
+<style>
+body {
+    background-image: url('kartka.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+div.gifts {
+    background-color: transparent;
+    width: 48%;
+    height: 63%;
+    text-align: left;
+    overflow: auto;
+    position: relative;
+    left: -12%;
+    top: 17%;
+    font-size: 150%;
+}
+div.coordinates {
+    background-color: transparent;
+    width: 45%;
+    height: 10%;
+    text-align: left;
+    position: relative;
+    left: 13%;
+    top: 5%;
+    font-size: 150%;
+    overflow: auto;
+    float: left;
+}
+img {
+    width: 16%;
+    height: 35%;
+    position: relative;
+    left: 81%;
+    top: 2%;
+    float: left;
+}
+</style>
+</head>
+<body>
+<img id="photo" src="">
+<div class="coordinates" id="geo"></div>
+<div class="gifts" id="gifts"></div>
+<script type="text/javascript">
+    (function()
+    {
+        document.getElementById("geo").innerHTML=card.getLocalization();
+        document.getElementById("gifts").innerHTML=card.getGifts();
+        document.getElementById("photo").src=card.getPath();
+    })();
+
+</script>
+</body>
+</html>

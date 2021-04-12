@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GosciniakHanna</string>
+    <string name="listuj">Listuj urządzenia</string>
+    <string name="devices"></string>
+</resources>

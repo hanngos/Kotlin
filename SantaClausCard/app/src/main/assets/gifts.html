@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport"
+          content="
+          height = device-height,
+          width = device-width,
+          user-scalable = no"/>
+<style>
+center {
+    position: relative;
+    top: 25%;
+ }
+.button {
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 4px 2px;
+  width: 35%;
+}
+.b1 {background-color: #4CAF50;}
+.b2 {background-color: #f44336;}
+</style>
+</head>
+<body>
+<center>
+    <button class="button b1" onclick="addGift()">Dodaj nowy prezent</button><br><br>
+    <button class="button b2" onclick="makeCard()">Generuj kartkę</button><br>
+</center>
+<script type="text/javascript">
+    function addGift()
+    {
+        gifts.addGift();
+    }
+    function makeCard()
+    {
+        gifts.takePhoto()
+    }
+</script>
+</body>
+</html>
