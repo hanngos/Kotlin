@@ -1,4 +1,4 @@
-These are four small apps written in Kotlin language for Android.
+These are four simple apps written in Kotlin language for Android.
 
 #### Complex Number Calculator 
 The first app is a simple complex number calculator. User can input separately the real part and imaginary part of each number, then choose either addition or substraction from a Spinner (drop-down list box). The result is being displayed on the Gaussian plane.
